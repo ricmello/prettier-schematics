@@ -1,7 +1,7 @@
 {
-  "name": "prettier",
-  "version": "0.0.0",
-  "description": "A blank schematics",
+  "name": "@ricmello/prettier",
+  "version": "0.1.0",
+  "description": "Another Angular schematic for adding prettier",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
@@ -9,7 +9,13 @@
   "keywords": [
     "schematics"
   ],
-  "author": "",
+  "author": "Ricardo Mello",
+  "repository": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ricmello/prettier-schematics.git"
+    }
+  },
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
