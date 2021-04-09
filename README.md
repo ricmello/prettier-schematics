@@ -1,28 +1,30 @@
-# Getting Started With Schematics
+# Prettier Schematic
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This schematic will add Prettier, Husky and lint-staged to your Angular project, and configure a pre-commit hook that will format your project files.
 
-### Testing
+[![npm (scoped)](https://img.shields.io/npm/v/@ricmello/prettier.svg)](https://www.npmjs.com/package/@ricmello/prettier)
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+## Usage 🚀
 
-Check the documentation with
-```bash
-schematics --help
+```shell
+ng add @ricmello/prettier
 ```
 
-### Unit Testing
+- install [Prettier](https://prettier.io), [Husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged)
+- creates a pre-commit hook that format the staged files
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
 
-### Publishing
+### Optionally: install globally
 
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
+```shell
+npm install -g @ricmello/prettier
 ```
 
-That's it!
- 
+Then in an Angular CLI project run
+
+```shell
+ng g @ricmello/prettier:add
+```
+
+
+![install-prettier-schematic](docs/install-prettier-schematic.gif)
