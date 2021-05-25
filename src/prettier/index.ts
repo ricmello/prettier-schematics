@@ -33,7 +33,7 @@ const packages = [tslintConfigPackage, 'prettier', 'lint-staged']
 function addDependencies(): Rule {
   return (tree: Tree, context: SchematicContext): Observable<Tree> => {
 
-    addPackageToPackageJson(tree, context, 'devDependencies', 'husky', '^4.3.0')
+    addPackageToPackageJson(tree, context, 'devDependencies', 'husky', '4.3.0')
 
     return from(packages).pipe(
       concatMap((pkg: string) => getLatestNodeVersion(pkg)),
